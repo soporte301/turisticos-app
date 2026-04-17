@@ -13,9 +13,15 @@ app.use(cors());
 // We increase the JSON payload limit so those images don't get rejected.
 app.use(express.json({ limit: '10mb' })); 
 
-const DB_FILE = path.join(__dirname, 'database.json');
+// In production (Easypanel), data is stored in /data/ which is a persistent volume.
+// In development (local), it falls back to the project folder.
+const DATA_DIR = process.env.DATA_DIR || path.join(__dirname);
+const DB_FILE = path.join(DATA_DIR, 'database.json');
 
-// Ensure DB exists on boot
+// Ensure directory and DB file exist on boot
+if (!fs.existsSync(DATA_DIR)) {
+  fs.mkdirSync(DATA_DIR, { recursive: true });
+}
 if (!fs.existsSync(DB_FILE)) {
   fs.writeFileSync(DB_FILE, JSON.stringify({}));
 }
