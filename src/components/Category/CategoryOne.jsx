@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
-import { Link } from "react-router-dom";
+
 
 const CategoryOne = () => {
   const swiperRef = useRef(null);
@@ -107,11 +107,11 @@ const CategoryOne = () => {
                   <img src={category.imgSrc} alt={category.title} loading="lazy" />
                 </div>
                 <h3 className="box-title">
-                  <Link to="/destination">{category.title}</Link>
+                  {category.title}
                 </h3>
-                <Link className="line-btn" to="/#service-sec">
+                <a className="line-btn" href="/#service-sec">
                   Ver paquetes
-                </Link>
+                </a>
               </div>
             </SwiperSlide>
           ))}
