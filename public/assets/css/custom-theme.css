@@ -1,0 +1,32 @@
+/* Custom Overrides for Turisticos de la Ribera Theme */
+:root {
+  --theme-color: #129188 !important; /* Teal */
+  --theme-color2: #D10A61 !important; /* Rosa/Magenta */
+  --title-color: #113D48 !important;
+}
+
+/* Fix any buttons that manually set colors ignoring variables */
+.th-btn, .th-btn::before, .th-btn::after {
+  background-color: var(--theme-color);
+}
+.th-btn.style2, .th-btn.style4 {
+  background-color: var(--theme-color2);
+}
+.th-btn.style4:hover {
+    background-color: var(--theme-color);
+}
+
+.box-title, .sec-title, .sub-title {
+    font-family: 'Manrope', sans-serif !important;
+}
+
+/* Ensure package prices use the magenta color */
+.tour-box_price .currency {
+    color: var(--theme-color2) !important;
+}
+
+/* Categories Title */
+.category-card .box-title {
+    color: var(--theme-color2) !important;
+    font-weight: 800;
+}

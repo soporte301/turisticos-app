@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+@theme {
+  /* Colors */
+  --color-primary: #1CA8CB; 
+  --color-heading: #113D48;
+  --color-bodytext: #6E7070;
+  --color-bgl: #E9F6F9;
+  --color-accent: #FFB539; 
+  --color-white: #ffffff;
+  
+  /* Fonts */
+  --font-heading: 'Manrope', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --font-script: 'Montez', cursive;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-bgl);
+  color: var(--color-bodytext);
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  color: var(--color-heading);
+}
+
+.tourm-shadow {
+  box-shadow: 0px 20px 20px rgba(204, 204, 204, 0.25);
+}
+
+.tourm-card {
+  background-color: var(--color-white);
+  border-radius: 24px;
+}
+
+/* Custom Scrollbar */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(28, 168, 203, 0.4);
+  border-radius: 10px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgba(28, 168, 203, 0.8);
+}
