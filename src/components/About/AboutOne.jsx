@@ -8,11 +8,11 @@ function AboutOne() {
             id="about-sec"
         >
             <div className="container shape-mockup-wrap">
-                <div className="row">
+                <div className="row align-items-center">
                     <div className="col-xl-6">
                         <div className="img-box1">
                             <div className="img1">
-                                <img src="/assets/img/normal/foto.jpeg" alt="About" style={{ objectFit: 'cover', width: '100%', height: '100%' }} />
+                                <img src="/assets/img/normal/foto.png" alt="About" style={{ objectFit: 'cover', width: '100%', height: '100%' }} />
                             </div>
                             <div className="img2" style={{ display: 'none' }}>
                                 <img src="/assets/img/normal/foto2.png" alt="About" style={{ objectFit: 'cover', width: '100%', height: '100%' }} />

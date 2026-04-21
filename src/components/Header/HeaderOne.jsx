@@ -25,30 +25,7 @@ function HeaderOne() {
         <>
             {/*============================== Header Area ==============================*/}
             <header className="th-header header-layout1">
-                <div className="header-top">
-                    <div className="container th-container">
-                        <div className="row justify-content-center justify-content-xl-between align-items-center">
-                            <div className="col-auto d-none d-md-block">
-                                <div className="header-links">
-                                    <ul>
-                                        <li className="d-none d-xl-inline-block">
-                                            <i className="fa-sharp fa-regular fa-location-dot" />
-                                            <span>Turísticos de la Ribera</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div className="col-auto">
-                                <div className="header-right">
-                                    <div className="header-links">
-                                        <ul>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
                 <div className={`sticky-wrapper ${isSticky ? "sticky" : ""}`}>
                     {/* Main Menu Area */}
                     <div className="menu-area">
@@ -68,7 +45,7 @@ function HeaderOne() {
                                                 <Link className="active" to="/">Inicio</Link>
                                             </li>
                                             <li>
-                                                <Link to="/#service-sec">Paquetes</Link>
+                                                <a href="/#service-sec">Paquetes</a>
                                             </li>
                                         </ul>
                                     </nav>
@@ -82,9 +59,9 @@ function HeaderOne() {
                                 </div>
                                 <div className="col-auto d-none d-xl-block">
                                     <div className="header-button">
-                                        <Link to="/#service-sec" className="th-btn style3 th-icon">
+                                        <a href="https://wa.me/523311113134?text=Hola%20estoy%20en%20la%20pagina%20web%20de%20turisticos%20y%20me%20interesa%20cotizar%20un%20paquete" target="_blank" rel="noreferrer" className="th-btn style3 th-icon">
                                             Reserva Ahora
-                                        </Link>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -92,7 +69,9 @@ function HeaderOne() {
                         <div className="logo-bg bg-mask"
                             style={{
                                 WebkitMaskImage: "url(/assets/img/logo_bg_mask.png)",
-                                maskImage: "url(/assets/img/logo_bg_mask.png)"
+                                maskImage: "url(/assets/img/logo_bg_mask.png)",
+                                width: "260px",
+                                maxWidth: "35%"
                             }} />
                     </div>
                 </div>

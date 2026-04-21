@@ -57,8 +57,8 @@ function FooterOne() {
                                         </div>
                                         <div className="details">
                                             <p>
-                                                <a href="mailto:info@turisticos.com" className="info-box_link">
-                                                    info@turisticos.com
+                                                <a href="mailto:gerenciaventas@turisticosdelaribera.com" className="info-box_link">
+                                                    gerenciaventas@turisticosdelaribera.com
                                                 </a>
                                             </p>
                                         </div>
@@ -68,7 +68,7 @@ function FooterOne() {
                                             <img src="/assets/img/icon/location-dot.svg" alt="img" />
                                         </div>
                                         <div className="details">
-                                            <p>Calle Principal, Centro Histórico</p>
+                                            <p>C. Maquinistas 251, La Paz, 44860 Guadalajara, Jal.</p>
                                         </div>
                                     </div>
                                 </div>

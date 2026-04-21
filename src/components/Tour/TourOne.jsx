@@ -138,40 +138,34 @@ Por favor necesito más información.`;
                               {(pkg.incAlimentos || pkg.incBebidas || pkg.incHospedaje) && (
                                  <div style={{ display: 'flex', gap: '12px', marginBottom: '15px' }}>
                                    {pkg.incAlimentos && (
-                                     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '2px' }}>
-                                       <div style={{ backgroundColor: '#f8f9fa', borderRadius: '50%', width: '32px', height: '32px', display: 'flex', alignItems: 'center', justifyContent: 'center', border: '1px solid #eee' }}>
-                                         <img src="/assets/img/icon/alimentos.png" alt="Alimentos" style={{ width: '18px', height: '18px', objectFit: 'contain' }} />
-                                       </div>
+                                     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '4px' }}>
+                                       <img src="/assets/img/icon/alimentos.png" alt="Alimentos" style={{ width: '24px', height: '24px', objectFit: 'contain' }} />
                                        <span style={{ fontSize: '9px', color: '#666', fontWeight: '600', textTransform: 'uppercase' }}>Comidas</span>
                                      </div>
                                    )}
                                    {pkg.incBebidas && (
-                                     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '2px' }}>
-                                       <div style={{ backgroundColor: '#f8f9fa', borderRadius: '50%', width: '32px', height: '32px', display: 'flex', alignItems: 'center', justifyContent: 'center', border: '1px solid #eee' }}>
-                                         <img src="/assets/img/icon/bebidas.png" alt="Bebidas" style={{ width: '18px', height: '18px', objectFit: 'contain' }} />
-                                       </div>
+                                     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '4px' }}>
+                                       <img src="/assets/img/icon/bebidas.png" alt="Bebidas" style={{ width: '24px', height: '24px', objectFit: 'contain' }} />
                                        <span style={{ fontSize: '9px', color: '#666', fontWeight: '600', textTransform: 'uppercase' }}>Bebidas</span>
                                      </div>
                                    )}
                                    {pkg.incHospedaje && (
-                                     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '2px' }}>
-                                       <div style={{ backgroundColor: '#f8f9fa', borderRadius: '50%', width: '32px', height: '32px', display: 'flex', alignItems: 'center', justifyContent: 'center', border: '1px solid #eee' }}>
-                                         <img src="/assets/img/icon/hospedaje.png" alt="Hospedaje" style={{ width: '18px', height: '18px', objectFit: 'contain' }} />
-                                       </div>
+                                     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '4px' }}>
+                                       <img src="/assets/img/icon/hospedaje.png" alt="Hospedaje" style={{ width: '24px', height: '24px', objectFit: 'contain' }} />
                                        <span style={{ fontSize: '9px', color: '#666', fontWeight: '600', textTransform: 'uppercase' }}>Hospedaje</span>
                                      </div>
                                    )}
                                  </div>
                               )}
 
-                              <h4 className="tour-box_price">
-                                <span className="currency">{getPrice(pkg)}</span>
+                              <h4 className="tour-box_price text-dark" style={{ color: '#222' }}>
+                                <span className="currency text-dark" style={{ color: '#222' }}>{getPrice(pkg)}</span>
                               </h4>
                               <div className="tour-action">
                                 <span>
                                   <i className="fa-light fa-clock" /> ¡Cotiza YA!
                                 </span>
-                                <a href={createWaLink(pkg)} target="_blank" rel="noreferrer" className="th-btn style4 th-icon">
+                                <a href={createWaLink(pkg)} target="_blank" rel="noreferrer" className="th-btn style4 th-icon" style={{ color: 'white' }}>
                                   Me Interesa
                                 </a>
                               </div>
